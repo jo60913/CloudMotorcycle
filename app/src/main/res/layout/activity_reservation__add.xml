@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cloudclient.clients.Reservation_Add">
+
+    <TextView
+        android:id="@+id/textView29"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:text="姓名" />
+
+    <EditText
+        android:id="@+id/reservation_add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/textView29"
+        android:layout_toRightOf="@+id/textView29"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="100dp"
+        android:text="忘備錄" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="時間"
+        android:layout_below="@+id/reservation_add_info"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignStart="@+id/textView30" />
+
+    <EditText
+        android:id="@+id/reservation_add_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignLeft="@+id/reservation_add_name"
+        android:layout_alignStart="@+id/reservation_add_name" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <Button
+        android:id="@+id/reservation_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="儲存"
+        android:layout_below="@+id/reservation_add_datePicker"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/reservation_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reservation_OK"
+        android:layout_alignEnd="@+id/reservation_add_info"
+        android:layout_alignRight="@+id/reservation_add_info"
+        android:text="清除"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/reservation_add_datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/reservation_add_info"
+        android:layout_toRightOf="@+id/textView30"
+        android:layout_toEndOf="@+id/textView30"
+        android:layout_marginTop="45dp" />
+
+</RelativeLayout>

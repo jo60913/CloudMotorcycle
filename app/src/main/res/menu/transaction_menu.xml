@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="保存"
+        android:id="@+id/search_save"
+        android:showAsAction="ifRoom" />
+    <item android:title="結帳"
+        android:id="@+id/search_check"
+        android:showAsAction="ifRoom" />
+    <item android:title="清除"
+        android:id="@+id/search_clean"
+        android:showAsAction="ifRoom" />
+</menu>
